@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- import google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- linkear una imagen para colocar en la pestaña de la pagina -->
+     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <!-- import fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/718dcffbc3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- llamamos a la hoja de estilos -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- configuracion de tipo de caracteres -->
+    <meta charset="UTF-8" />
+    <!-- configuracion del motor de renderizado -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./img/logo.png" alt="logo" />
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li style="color: aqua">Home</li>
+          <!-- colocar estilo inline -->
+          <li class="btn">Productos</li>
+          <li class="btn">Contacto</li>
+          <li class="btn">AboutUs</li>
+        </ul>
+      </nav>
+      <div id="cart" class="cart" style="color: aqua">
+        <i id="carrito" class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </header>
+    <main class="main">
+      <h1 style="font-size: 10px">Las Mejores Hamburguesas</h1>
+      <p>Esto es el Main</p>
+      <img src="./img/foto.jpeg" alt="foto" class="imagenProfesor" />
+    </main>
+    <!-- Estilo mediante una etiqueta <style></style> -->
+    <style>
+      body {
+        background: pink;
+      }
+    </style>
+    <!-- linkeando archivo js -->
+    <script src="./script.js"></script>
+  </body>
+</html>

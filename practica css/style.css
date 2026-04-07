@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}
+
+/* aqui comienza mi encabezado*/
+header{
+    background: brown;
+}
+
+.logo {
+    img{
+        width: 100px;
+    }
+    
+}
+
+.navbar{
+    color: chocolate;
+}
+.btn{
+    color: blue;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: aqua;
+    font-family: "Bitcount Grid Double Ink", system-ui;
+}
+.main{
+    background: blueviolet;
+    
+}
+
+.imagenProfesor{
+    width: 200px;
+    border-radius: 100px;
+}
+

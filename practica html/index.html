@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina de entrenamiento</title>
+  </head>
+  <body>
+    <!-- Estilo Inline -->
+    <header style="color: blue; background: red;">
+      <p>Bienvenido a mi pagina de entrenamiento</p>
+      <!-- enlaces relativos -->
+      <a href="./index.html"><li>Home</li></a>
+      <a href="#user"><li>Products</li></a>
+      <!-- enlaces absolutos -->
+      <a href="https://www.rosario3.com/" target="_blank"
+        ><li>Diario Rosario3</li></a
+      >
+      <!-- enlaces internos -->
+      <a href="#logo"><li>Imagen</li></a>
+    </header>
+    <!-- listas ordenadas -->
+    <ol>
+      <li class="listaOrdenada">Gaseosa</li>
+      <li class="listaOrdenada">Pan</li>
+      <li class="listaOrdenada">Salsa</li>
+      <li class="listaOrdenada">Pimiento</li>
+      <li class="listaOrdenada">Queso</li>
+    </ol>
+    <!-- listas desordenadas -->
+    <ul>
+      <li>Gaseosa</li>
+      <li>Pan</li>
+      <li>Salsa</li>
+      <li>Pimiento</li>
+      <li>Queso</li>
+    </ul>
+    <!-- tablas -->
+    <table>
+      <thead>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+        <th>Direccion</th>
+        <th>Email</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Claudio</td>
+          <td>Paredes</td>
+          <td>46</td>
+          <td>Arijon 515</td>
+          <td>claudio@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Alejandro</td>
+          <td>Mingorance</td>
+          <td>45</td>
+          <td>Arijon 515</td>
+          <td>alejandro@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Juan</td>
+          <td>Paredes</td>
+          <td>46</td>
+          <td>Arijon 515</td>
+          <td>juan@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <!-- formularios -->
+    <form
+      action="index.html"
+      method="post"
+      enctype="application/x-www-form-urlencoded"
+    >
+      <label for="user">Nombre</label>
+      <input
+        type="text"
+        name="user"
+        id="user"
+        placeholder="Pone tu nombre"
+        value="Claudio"
+      />
+      <br />
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" />
+      <input type="checkbox" name="" id="" checked />
+      <input
+        type="button"
+        value="Enviar"
+        onclick="location.href = 'index.html'"
+      />
+    </form>
+    <select name="" id="">
+      <option value="all">Todas las categorias</option>
+      <option value="ropa">ropa</option>
+      <option value="zapatillas">zapatillas</option>
+      <option value="zapatos">zapatos</option>
+    </select>
+    <select name="" id="">
+      <option value="all">Toda la ropa</option>
+      <option value="camisas">camisas</option>
+      <option value="pantalones">pantalones</option>
+      <option value="zapatos">zapatos</option>
+    </select>
+
+    <!-- insertar imagen -->
+    <img src="./img/logo.png" alt="logo" id="logo" />
+    <img
+      src="https://cdn-3.motorsport.com/images/amp/6grBKBxY/s1000/franco-colapinto-alpine.jpg"
+      alt=""
+    />
+
+    <!-- insertar video -->
+    <iframe
+      width="720"
+      height="480"
+      src="https://www.youtube.com/embed/vc1PN3SUshc?si=UedSzgKpfU54jXhu"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+  <!-- Estilo mediante etiqueta en HTML -->
+  <style>
+    body{
+      background: yellow;
+    }
+    header{
+      font-size: 1em;
+      color: red;
+    }
+  </style>
+</html>

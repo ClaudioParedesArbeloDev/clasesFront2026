@@ -1,0 +1,20 @@
+body{
+    background: black;
+}
+/* estilo a una etiqueta */
+li{
+    color: pink;
+    background: black;
+}
+
+/* estilo a una class */
+.listaOrdenada{
+    color: green;
+    background: brown;
+}
+
+/* estilo a una id */
+#logo{
+    width: 100px;
+    height: 100px;
+}

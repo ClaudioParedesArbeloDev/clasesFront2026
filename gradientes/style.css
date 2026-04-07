@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+}
+
+.container{
+    width: 30vw;
+    height: 30vh;
+    background: 
+    linear-gradient( red, blue);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    transition: 1.5s;
+}
+
+.container:hover{
+    transform: translate(200px) rotateZ(90deg);
+}
+
+.autito{
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all 2s ease;
+}
+
+.autito:hover{
+    transform: perspective(500px)
+                translate(-200px)
+                rotateZ(60deg)   
+                
+}
+
+.container1{
+    width: 30vw;
+    height: 30vh;
+    background: 
+    linear-gradient( red, blue);
+    transition: height 1s ease, width 2s ease;
+}
+
+.container1:hover{
+    height: 50vh;
+    width: 50vw;
+}
+
+.input{
+    width: 300px;
+    height: 30px;
+    margin: 30px;
+    
+}
+
+input:focus{
+    border: 6px solid yellow;
+    background: blue;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+@keyframes move{
+    0%{ width: 100%;}
+    25%{ width: 150%;}
+    50%{ width: 100%; background: red;}
+    75%{ width: 50%;}
+    100%{ width: 100%; background: green;}
+}
+
+.container2{
+    width: 30vw;
+    height: 30vh;
+    background: yellow;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-delay: 10s;
+}
+
+@keyframes aparecer{
+    0%{ opacity: 0;}
+    50%{ opacity: 1;}
+    100%{ opacity: 0;}
+}
+
+.title{
+    animation-name: aparecer;
+    animation-iteration-count: 2;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+}

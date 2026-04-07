@@ -1,0 +1,24 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    justify-items: end;
+    align-items: center;
+}
+
+.item1{
+    justify-self: center;
+    background: blue;
+}
+
+.item2{
+    background: red;
+}
+
+.item3{
+    background: green;
+}
+
+.item4{
+    background: yellow;
+}
