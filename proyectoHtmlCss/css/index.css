@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background:#3d2645;
+    color:#f0eff4 ;
+}
+
+.logo{
+    img{
+        width: 80px;
+    }
+    p{
+        display: none;
+    }
+}
+
+.nav{
+    display: none
+}
+
+.cart{
+    display: none;
+}
+
+.menu{
+    font-size: 2em;
+}
+
+.main{
+    display: flex;
+    
+}
+.mainLeft{
+    width: 20%;
+    background: yellow;
+}
+.mainCenter{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #832161;
+    border-radius: 10px;
+    margin: 10px;
+    padding-bottom: 10px;
+    img{
+        width: 80%;
+    }
+    button{
+        background: #832161;
+        color: #f0eff4;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+}
+
+.mainRight{
+    width: 20%;
+    background: blue;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background:#3d2645;
+}
+
+.logoFooter{
+    display: flex;
+    align-items: center;
+    img{
+        width: 60px;
+    }
+    p{
+        display: none;
+    }
+}
+.SocialMedia{
+    display: flex;
+    align-items: center;
+    a{
+        text-decoration: none;
+        i{
+            font-size: 2em;
+            padding: 10px;
+            color: #f0eff4;
+            transition: 0.5s;
+        }
+        i:hover{
+            color: #da4167;
+            transform: scale(1.2);
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .menu{
+        display: none;
+    }
+    .nav{
+        display: flex;
+        a{
+            text-decoration: none;
+            li{
+                list-style: none;
+                padding: 10px;
+                margin: 10px;
+                font-size: 1.5em;
+                color: #f0eff4;
+                transition: 0.3s all;
+            }
+            li:hover{
+                color:#da4167;
+                transform: scale(1.1);
+            }
+        }
+    }
+    .cart{
+        display: flex;
+        a{
+            text-decoration: none;
+            i{
+                color: #f0eff4;
+                font-size: 1.5em;
+                transition: 0.3s all;
+            }
+            i:hover{
+                color:#da4167;
+                transform: scale(1.1);
+            }
+        }
+    }
+    .mainCenter{
+        justify-content: center;
+    }
+}
