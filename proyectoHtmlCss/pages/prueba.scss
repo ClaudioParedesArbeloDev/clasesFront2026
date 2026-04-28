@@ -1,0 +1,30 @@
+@for $i from 1 through 10 {
+    .col-#{$i}{
+        width: 10% * $i;
+    }
+}
+
+$estilos: (
+    "rojo": #ff0000,
+    "verde": #00ff00,
+    "azul": #0000ff
+);
+
+div{
+    color: map-get($estilos, $key: "azul")
+}
+
+
+.boton, .boton--aceptar, .boton--cancelar{
+    width: 200px;
+    height: 50px;
+    background-color: #d4c0c0;
+    color: #fff;
+    border: none;
+}
+.boton--aceptar{
+    background-color: green;
+}
+.boton--cancelar{
+    background-color: red;
+}

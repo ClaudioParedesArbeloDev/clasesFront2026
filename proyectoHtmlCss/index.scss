@@ -1,69 +1,80 @@
-*{
+//importando componentes
+@import './components/colors.scss';
+@import './components/fonts.scss';
+
+/* esto es mobile first */
+* {
     margin: 0;
-    
+
 }
 
-body{
+body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
 }
 
-.header{
+.header {
     display: flex;
+    font-family: $font-montserrat;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background:#3d2645;
-    color:#f0eff4 ;
+    padding: $padding;
+    background: $color-background;
+    color: $color-text;
 }
 
-.logo{
-    img{
+.logo {
+    img {
         width: 80px;
     }
-    p{
+
+    p {
         display: none;
     }
 }
 
-.nav{
+.nav {
     display: none
 }
 
-.cart{
+.cart {
     display: none;
 }
 
-.menu{
+.menu {
     font-size: 2em;
 }
 
-.main{
+.main {
     display: flex;
-    
+
 }
-.mainLeft{
+
+.mainLeft {
     width: 20%;
     background: yellow;
 }
-.mainCenter{
+
+.mainCenter {
     display: flex;
     flex-wrap: wrap;
 }
 
-.product{
+.product {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid #832161;
+    border: 2px solid $color-primary;
     border-radius: 10px;
     margin: 10px;
     padding-bottom: 10px;
-    img{
+
+    img {
         width: 80%;
     }
-    button{
+
+    button {
         background: #832161;
         color: #f0eff4;
         border: none;
@@ -73,56 +84,66 @@ body{
     }
 }
 
-.mainRight{
+.mainRight {
     width: 20%;
     background: blue;
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background:#3d2645;
+    background: #3d2645;
 }
 
-.logoFooter{
+.logoFooter {
     display: flex;
     align-items: center;
-    img{
+
+    img {
         width: 60px;
     }
-    p{
+
+    p {
         display: none;
     }
 }
-.SocialMedia{
+
+.SocialMedia {
     display: flex;
     align-items: center;
-    a{
+
+    a {
         text-decoration: none;
-        i{
+
+        i {
             font-size: 2em;
             padding: 10px;
             color: #f0eff4;
             transition: 0.5s;
         }
-        i:hover{
+
+        i:hover {
             color: #da4167;
             transform: scale(1.2);
         }
     }
 }
 
-@media screen and (min-width: 768px){
-    .menu{
+/* Aca comienza el media query para que se vea mejor en dispositivos de tamaño más grande */
+@media screen and (min-width: 768px) {
+    .menu {
         display: none;
     }
-    .nav{
+
+    .nav {
         display: flex;
-        a{
+
+        a {
             text-decoration: none;
-            li{
+
+            li {
                 list-style: none;
                 padding: 10px;
                 margin: 10px;
@@ -130,28 +151,46 @@ body{
                 color: #f0eff4;
                 transition: 0.3s all;
             }
-            li:hover{
-                color:#da4167;
+
+            li:hover {
+                color: #da4167;
                 transform: scale(1.1);
             }
         }
     }
-    .cart{
+
+    .cart {
         display: flex;
-        a{
+
+        a {
             text-decoration: none;
-            i{
+
+            i {
                 color: #f0eff4;
                 font-size: 1.5em;
                 transition: 0.3s all;
             }
-            i:hover{
-                color:#da4167;
+
+            i:hover {
+                color: #da4167;
                 transform: scale(1.1);
             }
         }
     }
-    .mainCenter{
+
+    .mainCenter {
         justify-content: center;
+    }
+}
+
+@for $i from 1 through 10 {
+    .padding-#{$i} {
+        padding: 10px * $i;
+    }
+}
+
+@for $font from 1 through 10 {
+    .font-#{$font} {
+        font-size: 1em * $font;
     }
 }

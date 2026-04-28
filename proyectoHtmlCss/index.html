@@ -5,28 +5,28 @@
       src="https://kit.fontawesome.com/718dcffbc3.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./output.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="./img/logo.png" alt="logo">
-            <p>Claudio Paredes</p>
+    <header class="flex items-center justify-between px-4 py-2 bg-indigo-400 ">
+        <div class="logo padding-1">
+            <img src="./img/logo.png" class="w-20" alt="logo">
+            <p class="hidden">Claudio Paredes</p>
         </div>
-        <nav class="nav">
+        <nav class="hidden">
             <a href="./index.html"><li>Home</li></a>
-            <a href="./pages/products.html"><li>Productos</li></a>
-            <a href="./pages/aboutUs.html"><li>Sobre Nosotros</li></a>
-            <a href="./pages/contact.html"><li>Contacto</li></a>
+            <a href="./pages/products/products.html"><li>Productos</li></a>
+            <a href="./pages/aboutUs/aboutUs.html"><li>Sobre Nosotros</li></a>
+            <a href="./pages/contact/contact.html"><li>Contacto</li></a>
         </nav>
-        <div class="cart">
+        <div class="hidden">
             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
-        <div class="menu">
-            <i class="fa-solid fa-bars"></i>
+        <div class="">
+            <i class="fa-solid fa-bars text-2xl"></i>
         </div>
     </header>
     <main class="main">
@@ -34,7 +34,7 @@
             <p>Propaganda</p>
         </div>
         <div class="mainCenter">
-            <div class="product">
+            <div class="flex flex-col border-solid border-2 border-green-500 rounded-[20px] md:border-amber-600 ">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyv7MBNPktkPDAUVyaf8VQDUeV8Pcpj1WlqA&s" alt="auto">
                 <h3>Producto</h3>
                 <p>Descripcion del producto</p>
