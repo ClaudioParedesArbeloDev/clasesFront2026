@@ -1,4 +1,4 @@
-let nombre = "Claudio"
+/* let nombre = "Claudio"
 
 console.log(nombre)
 
@@ -54,3 +54,20 @@ const arrayfrutas = frutas.map(element => {
    const frutasMap = element.nombre + " tiene " + element.edad + " años"
    
 });
+ */
+
+let nombre = prompt("Ingrese su nombre:").toUpperCase();
+let sexo = prompt(  "Ingrese su sexo (M para mujer, H para hombre):",).toUpperCase();
+
+let grupo;
+
+
+
+if ((sexo === "M" && nombre < "M") || (sexo === "H" && nombre > "N")) {
+  grupo = "A";
+} else {
+  grupo = "B";
+}
+
+console.log(`Te corresponde el grupo ${grupo}`);
+alert(`Te corresponde el grupo ${grupo}`);
