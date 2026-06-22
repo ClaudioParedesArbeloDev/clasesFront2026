@@ -1,17 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Script que enlaza nuestra pagina con font awesone -->
     <script
       src="https://kit.fontawesome.com/718dcffbc3.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Es la configuracion de Taildwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tienda Claudio</title>
   </head>
-
-
+  <!-- el grid hace que el header y el footer se peguen tanto arriba como abajo dando 1fr para el contenido -->
   <body class="grid grid-rows-[auto_1fr_auto] h-screen">
     <header class="flex justify-around items-center bg-cyan-700 p-4">
 
@@ -20,12 +21,16 @@
         <p class="hidden md:block md:text-base md:font-bold">Tienda de ropa</p>
         <p class="hidden md:block uppercase tracking-widest">Code & Lens</p>
       </a>
-      <div>
+      <div class="flex flex-col items-center">
+        <!-- Input para usar de buscador -->
         <input
           type="text"
-          class="border rounded-md p-2 w-50 md:w-100 focus:outline-blue-700 text-xs"
+          class="border rounded-md p-2 w-50 md:w-100 focus:outline-blue-700 text-xs mb-2"
           placeholder="Buscar"
+          id="buscador"
         />
+        <!-- le estamos dando un lugar para colocar categorias -->
+        <select id="categories"></select>
       </div>
       <div>
         <a href=""><i class="fa-solid fa-cart-shopping text-2xl hover:text-fuchsia-700 duration-300 ease-in-out"></i></a>
@@ -33,6 +38,7 @@
     </header>
 
     <main>
+        <!-- Por aqui inyectamos codigo a traves de JS -->
         <div id="products" class="flex flex-wrap">     
         </div>
     </main>
@@ -49,6 +55,7 @@
         <a href="" class="m-2 md:m-4"><i class="fa-brands fa-tiktok p-1 md:p-4 text-3xl hover:text-fuchsia-600 duration-300 ease-in-out"></i></a>
       </div>
     </footer>
+    <!-- Este es el enlace a nuestro archivo JS -->
     <script src="./js/script.js"></script>
   </body>
 </html>
