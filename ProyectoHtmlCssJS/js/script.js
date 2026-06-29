@@ -1,10 +1,11 @@
 /* Captamos el nodo con el id products en el html */
 const productsContainer = document.getElementById("products");
 
+
 //Array vacio que vamos a utilizar para nuestros productos
 let products = [];
 
-
+//Aca envia los productos que se van a cargar
 //LLamamos a la funcion loadProducts
 loadProducts();
 
@@ -14,12 +15,14 @@ async function loadProducts() {
     const response = await fetch("https://fakestoreapi.com/products");
     //llamamos al array vacio y lo llenamos con el resultado de la respuesta de la variable response
     products = await response.json();
+    console.log(products)
     //estamos llamando a la funcion renderProducts y le pasamos como parametro products
     renderProducts(products);
     renderCategories(products);
     
 }
 
+//aca vienen los productos que va a mostrar por pantalla
 //declaramos la funcion renderProducts y le decimos que le vamos a pasar un parametro
 function renderProducts(data){
     //este es la variable donde guardamos el nodo que captamos desde el html y le insertamos codigo html, por ahora vacio.
@@ -31,7 +34,7 @@ function renderProducts(data){
     data.forEach( product => {
             productsContainer.innerHTML += `
                 <div class = "card">
-                    <a href='detail.html?id=${product.id}' class="flex flex-col items-center border-2 m-4 p-4 w-50 h-100 rounded-xl">
+                    <a href='../ProyectoHtmlCssJS/pages/detail.html?id=${product.id}' class="flex flex-col items-center border-2 m-4 p-4 w-50 h-100 rounded-xl">
                         <img src='${product.image}' alt='${product.name}' class="w-40 h-50 object-contain"/>
                         <div class="pt-4">
                             <p>${product.category}</p>
@@ -41,7 +44,7 @@ function renderProducts(data){
                     </a>
                 </div>
 
-            ` 
+            `; 
 
     })
 
@@ -49,6 +52,7 @@ function renderProducts(data){
 
 //tomamos el nodo del buscador para obtener el resultado de lo buscado en el input
 const search = document.getElementById('buscador');
+
 
 //estamos escuchando un evento (input)
 const input = search.addEventListener('input', ()=>{
@@ -63,7 +67,7 @@ const input = search.addEventListener('input', ()=>{
 })
 
 
-//captamos el nodo de las categorias
+//captamos el nodo de las categorias que es una etiqueta select
 const categorias = document.getElementById('categories')
 
 function renderCategories(data) {

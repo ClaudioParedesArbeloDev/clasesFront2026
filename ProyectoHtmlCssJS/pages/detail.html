@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script
+      src="https://kit.fontawesome.com/718dcffbc3.js"
+      crossorigin="anonymous"
+    ></script>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="flex justify-around items-center bg-cyan-700 p-4">
+
+      <a href="../index.html" class="flex flex-col items-center">
+        <img src="../images/logo.png" alt="logo empresa" class="w-14" />
+        <p class="hidden md:block md:text-base md:font-bold">Tienda de ropa</p>
+        <p class="hidden md:block uppercase tracking-widest">Code & Lens</p>
+      </a>
+      
+      <div>
+        <a href=""><i class="fa-solid fa-cart-shopping text-2xl hover:text-fuchsia-700 duration-300 ease-in-out"></i></a>
+      </div>
+    </header>
+
+    <main>
+        <div id="productWrapper" class="flex justify-center w-full"></div>
+    </main>
+    <script src="../js/productDetail.js"></script>
+</body>
+</html>
